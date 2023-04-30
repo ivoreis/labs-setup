@@ -1,0 +1,16 @@
+general:
+  base_path: /home/ubuntu/ai/models
+  diffusers: |
+    diffusers
+  checkpoints: |
+    diffusion_models
+  vae: |
+    vaes
+  loras: |
+    loras
+  embeddings: |
+    textual_inversion_embeddings
+  upscale_models: |
+    upscale_models
+  controlnet: |
+    control_net_models
