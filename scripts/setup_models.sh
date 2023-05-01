@@ -30,12 +30,13 @@ echo "Done: Setup base folders"
 echo "Start: Setup diffusion models"
 DIFFUSION=(
  "https://civitai.com/api/download/models/51426" #Colorful
- "https://civitai.com/api/download/models/5581" #Anything 4.5
+ "https://civitai.com/api/download/models/5581"  #Anything 4.5
  "https://civitai.com/api/download/models/15236" #Deliberate 2 
- "https://civitai.com/api/download/models/27392" #OpenJourney
+#  "https://civitai.com/api/download/models/27392" #OpenJourney
  "https://civitai.com/api/download/models/29460" #Realistic Vision 2
- "https://civitai.com/api/download/models/11925" #Never Ending Dream
+#  "https://civitai.com/api/download/models/11925" #Never Ending Dream
  "https://civitai.com/api/download/models/46846" #Rev Animated
+#  "https://civitai.com/api/download/models/26976" #KitchenSink2safe
 )
 for diffusion in "${DIFFUSION[@]}"; do
     wget "${diffusion}" "${WGET_OPS}" -P "$BASE_FOLDER/$DIFFUSION_MODELS"
